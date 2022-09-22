@@ -14,8 +14,8 @@ export class NovaTransferenciaComponent {
 
   transferir() {
     console.log('Solicitado nova transferência')
-    const valorEmitir = { valor: this.valorDeNovaTransferencia, destino: this.destinoDeNovaTransferencia }
-    this.aoTransferir.emit({ valorEmitir })
+    const valorEmitir = { valorConst: this.valorDeNovaTransferencia, destinoConst: this.destinoDeNovaTransferencia }
+    this.aoTransferir.emit(valorEmitir)
     this.limparCampos()
   }
 
